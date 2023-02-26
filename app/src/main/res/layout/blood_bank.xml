@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Loginbackground">
+
+    <TextView
+        android:id="@+id/blood_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/blood_bank"
+        android:textColor="@color/textcolor"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:id="@+id/listview"
+        android:layout_below="@id/blood_id"/>
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/listview"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blood_group"
+            android:textColor="#ffffff"
+            android:textSize="25sp"/>
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/requestButton"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_below="@id/linearlayout2"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

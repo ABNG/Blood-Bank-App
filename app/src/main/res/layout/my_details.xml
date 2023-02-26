@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Loginbackground">
+
+    <TextView
+        android:id="@+id/detail_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/my_details"
+        android:textColor="@color/textcolor"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/my_username"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:textColorHint="@color/textcolor"
+        android:textColor="#ffffff"
+        android:layout_below="@id/detail_id"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:inputType="text"/>
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/my_username">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/my_radiobutton_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp" />
+            <RadioButton
+                android:id="@+id/my_radiobutton_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp"/>
+        </RadioGroup>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/my_Email"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:textColorHint="@color/textcolor"
+        android:textColor="#ffffff"
+        android:layout_below="@id/linearlayout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/my_contactNo"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/contact_no"
+        android:textColorHint="@color/textcolor"
+        android:textColor="#ffffff"
+        android:layout_below="@id/my_Email"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/my_Address"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/mm_city"
+        android:textColorHint="@color/textcolor"
+        android:textColor="#ffffff"
+        android:layout_below="@id/my_contactNo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/my_Address"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blood_group"
+            android:textColor="#ffffff"
+            android:textSize="25sp"/>
+
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:id="@+id/my_spinner" />
+
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayout2"
+        android:text="@string/i_want_to_be_a_donor"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@color/donortext"/>
+    <Button
+        android:id="@+id/my_updateButton"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="@string/updated"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_below="@id/checkbox2"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/alertText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to_see_update_effect_please_re_login"
+        android:textColor="#ffffff"
+        android:layout_below="@id/my_updateButton"
+        android:layout_centerHorizontal="true"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>
